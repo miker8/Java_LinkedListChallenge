@@ -30,7 +30,7 @@ public class Main {
 
         var iterator = linkList.listIterator();
 
-        boolean quitLop = false;
+        boolean quitLoop = false;
         boolean forward = true;
 
         while (!quitLoop) {
@@ -44,7 +44,7 @@ public class Main {
                 System.out.println("Final : " + iterator.previous());
                 forward = false;
             }
-            System.out.println("Enter a Selection: /n");
+            System.out.println("Enter a Selection: \n");
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
 
@@ -83,7 +83,7 @@ public class Main {
         }
     }
 
-    private void listPlaces(LinkedList<Place> places) {
+    private static void listPlaces(LinkedList<Place> places) {
         System.out.println(places);
     }
 
